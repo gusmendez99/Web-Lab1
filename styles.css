@@ -95,6 +95,7 @@ header {
 	text-transform: uppercase;
 	font-family: 'Montserrat';
 	font-weight: 700;
+	margin-left: 10px;
 }
 
 .logged__user {
@@ -157,10 +158,18 @@ header {
 }
 
 .sidebar__options li {
+	text-decoration: none;
 	padding: 12px 0px 12px 0px ;
 	color: #747e7e;
 	font-size: 3.5rem;
 	font-weight: 400;
+
+}
+
+.sidebar__options a {
+	text-decoration: none;
+	color: #747e7e;
+
 }
 
 .sidebar__options .active {
