@@ -8,6 +8,7 @@ html, body
 	font-size: 4px;
 	margin: 0px;
 	padding: 0px;
+	
 }
 br
 {
@@ -229,6 +230,7 @@ header
 	background: #00b2ac;
 	border-radius: 50%;
 	color: white;
+	cursor: pointer;
 	font-size: 6rem;
 	padding: 3rem 3.6rem;
 	text-shadow: 0 1px 1px rgba(76, 76, 76, 0.21);
@@ -238,83 +240,81 @@ header
 /*
 	Library Style
 */
+
 .library__container
 {
+	display: flex;
 	flex: 10;
-	width: 100%;
+	flex-flow: row wrap;
 	height: 100%;
 	margin-left: 60px;
-	display: flex;
-    flex-flow: column wrap;
-
-}
-
-.library__header {
 	width: 100%;
-	margin: 4px 32px;
+}
+.library__header
+{
+	align-items: center;
 	flex-grow: 1;
 	flex-shrink: 0;
-	align-items: center;
-	
+	margin: 4px 32px;
+	width: 100%;
 }
-
 .library__container > .library__header
-{	
+{
 	display: flex;
 	flex-wrap: row wrap;
 }
-
-.library__header__info {
-	flex: 2;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
+.library__header__info
+{
 	align-content: flex-start;
+	align-items: center;
+	display: flex;
+	flex: 2;
+	flex-direction: row;
+	flex-wrap: wrap;
 	font-size: 7.25rem;
 }
-
-.library__title {
+.library__title
+{
 	color: #00938e;
 	font-family: "Open Sans";
 	font-size: 7.25rem;
 	font-weight: 400;
 }
-
-.library__header__info > .main__action {
+.library__header__info .main__action
+{
 	color: #a0aaaa;
 	margin-left: 30px;
 }
-
-.library__header__info > .secondary__action {
+.library__header__info .secondary__action
+{
 	color: #c78181;
 	margin-left: 12px;
 }
 
-
 /* Options */
 
-.library__header__options {
+.library__header__options
+{
 	flex: 2;
 	margin-right: 24px;
-	width: 100%;
 	text-align: right;
+	width: 100%;
 }
-
-.library__header__options button {
+.library__header__options button
+{
 	border: none;
-  	outline: none;
-	width: fit-content;
-	height: 49px;
 	border-radius: 25px;
-	padding: 16px 44px;
 	color: #ffffff;
-	margin-left: 32px;
+	cursor: pointer;
 	font-family: 'Montserrat';
 	font-size: 3.5rem;
 	font-weight: bold;
+	height: 49px;
+	margin-left: 32px;
+	outline: none;
+	padding: 16px 44px;
 	text-transform: uppercase;
-
+	width: fit-content;
 }
 
 
@@ -322,54 +322,67 @@ header
 /*
 	Tabs Style
 */
-.library__tabs {
-	width: 100%;
+.library__tabs
+{
+	align-items: center;
+	background-color: transparent;
+	border-bottom: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid #ccc;
 	flex-grow: 1;
 	flex-shrink: 0;
-	align-items: center;
 	overflow: hidden;
-	border-top:    1px solid #ccc;
-	border-right:  none;
-	border-bottom: 1px solid #ccc;
-	border-left:   none;
+	width: 100%;
+}
+.library__tabs button
+{
 	background-color: transparent;
-	
-  }
-  
-  .library__tabs button {
-	background-color: transparent;
-	float: left;
 	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 32px 16px 24px 16px;
-	margin: 0px 16px;
-	transition: 0.3s;
 	color: #a6a7a7;
+	cursor: pointer;
+	float: left;
 	font-family: "Open Sans";
 	font-size: 4rem;
 	font-weight: 700;
 	line-height: 2.75rem;
-  }
-  
-  /* Change background color of buttons on hover */
-  .library__tabs button:hover {
+	margin: 0px 16px;
+	outline: none;
+	padding: 32px 16px 24px 16px;
+	transition: 0.3s;
+}
+.library__tabs button:hover
+{
 	background-color: #ddd;
-  }
-  
+}
   /* Create an active/current tablink class */
-  .library__tabs button.active {
-	color: #019c97;
+.library__tabs button.active
+{
 	border-bottom: 8px solid #019c97;
-  }
+	color: #019c97;
+}
 
-  .library__tabs button i {
-	margin-left: 32px;
+.library__tabs button i
+{
 	font-size: 4.5rem;
-  }
-  
+	margin-left: 32px;
+}
+
+
+/*
+  Books container
 */
 
+.library__books
+{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 42px;
+	padding: 28px;
+	width: 100%;
+}
 
 
 /*
@@ -379,8 +392,13 @@ header
 {
 	border-radius: 2rem;
 	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
-	display: block;
+	box-sizing: border-box;
+	color: white;
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 2rem;
+	margin-bottom: 64px;
+	margin-right: 64px;
 	overflow: hidden;
 	width: 226px;
 }
@@ -406,6 +424,7 @@ header
 {
 	color: #777777;
 	font-size: 3rem;
+	margin-top: 4px;
 }
 .book__actions
 {
@@ -415,3 +434,25 @@ header
 	right: 0;
 	width: 12rem;
 }
+.book__action
+{
+	border-radius: 50%;
+	color: grey;
+	cursor: pointer;
+	font-size: 6rem;
+	padding: 3rem 3.6rem;
+	text-shadow: 0 1px 1px rgba(76, 76, 76, 0.21);
+	vertical-align: middle;
+}
+
+@media (max-width:767px) {
+	.book {
+	  flex-basis: calc(50% - 12px);
+	}
+  }
+  
+  @media (max-width:460px) {
+	.book {
+	  flex-basis: 100%;
+	}
+  }

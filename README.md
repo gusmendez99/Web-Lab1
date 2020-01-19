@@ -5,4 +5,5 @@ Web Layout
 ![Preview](https://i.ibb.co/3TFHKzQ/libroselectronicos-psd.png)
 
 ## My Layout
-![Layout](https://i.ibb.co/d0T1S9Z/ss-layout.png)
+DONE. It's better to set zoom 70% to see the similarity
+![Layout](http://i.imgur.com/T2wN8se.png)
