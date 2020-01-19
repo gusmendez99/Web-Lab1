@@ -18,6 +18,16 @@ br
 	color: #00c4c0;
 }
 
+.primary__color__theme {
+	background-color: #00bc5d;
+	background-image: linear-gradient(to top, rgba(194, 194, 194, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+}
+
+.secondary__color__theme {
+	background-color: #00bcb7;
+	background-image: linear-gradient(to top, rgba(194, 194, 194, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+}
+
 /*
 	Header Style
 */
@@ -131,8 +141,8 @@ header
 	border-radius: 10px;
 	box-shadow: 0 2px 2px rgba(93, 93, 93, 0.18);
 	flex: 2;
+	width: max-content;
 	height: 669px;
-	width: 318px;
 }
 .sidebar__menu__container
 {
@@ -179,7 +189,7 @@ header
 }
 .sidebar__actions__container
 {
-	margin: 42px 0px 50px 27px;
+	margin: 42px 28px 32px 28px;
 }
 .sidebar__action__title
 {
@@ -194,7 +204,8 @@ header
 .sidebar_action_bottom
 {
 	align-items: center;
-	display: block;
+	display: flex;
+	flex-direction: row;
 }
 .sidebar__action__field
 {
@@ -230,7 +241,140 @@ header
 .library__container
 {
 	flex: 10;
+	width: 100%;
+	height: 100%;
+	margin-left: 60px;
+	display: flex;
+    flex-flow: column wrap;
+
 }
+
+.library__header {
+	width: 100%;
+	margin: 4px 32px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	align-items: center;
+	
+}
+
+.library__container > .library__header
+{	
+	display: flex;
+	flex-wrap: row wrap;
+}
+
+.library__header__info {
+	flex: 2;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	align-content: flex-start;
+	font-size: 7.25rem;
+}
+
+.library__title {
+	color: #00938e;
+	font-family: "Open Sans";
+	font-size: 7.25rem;
+	font-weight: 400;
+}
+
+.library__header__info > .main__action {
+	color: #a0aaaa;
+	margin-left: 30px;
+}
+
+.library__header__info > .secondary__action {
+	color: #c78181;
+	margin-left: 12px;
+}
+
+
+/* Options */
+
+.library__header__options {
+	flex: 2;
+	margin-right: 24px;
+	width: 100%;
+	text-align: right;
+}
+
+.library__header__options button {
+	border: none;
+  	outline: none;
+	width: fit-content;
+	height: 49px;
+	border-radius: 25px;
+	padding: 16px 44px;
+	color: #ffffff;
+	margin-left: 32px;
+	font-family: 'Montserrat';
+	font-size: 3.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+
+
+/*
+	Tabs Style
+*/
+.library__tabs {
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	align-items: center;
+	overflow: hidden;
+	border-top:    1px solid #ccc;
+	border-right:  none;
+	border-bottom: 1px solid #ccc;
+	border-left:   none;
+	background-color: transparent;
+	
+  }
+  
+  .library__tabs button {
+	background-color: transparent;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 32px 16px 24px 16px;
+	margin: 0px 16px;
+	transition: 0.3s;
+	color: #a6a7a7;
+	font-family: "Open Sans";
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 2.75rem;
+  }
+  
+  /* Change background color of buttons on hover */
+  .library__tabs button:hover {
+	background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .library__tabs button.active {
+	color: #019c97;
+	border-bottom: 8px solid #019c97;
+  }
+
+  .library__tabs button i {
+	margin-left: 32px;
+	font-size: 4.5rem;
+  }
+  
+*/
+
+
+
+/*
+	Book Style
+*/
 .book
 {
 	border-radius: 2rem;
