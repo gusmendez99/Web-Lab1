@@ -246,7 +246,7 @@ header
 	flex: 10;
 	flex-flow: row wrap;
 	height: 100%;
-	margin-left: 60px;
+	margin: 0px 60px;
 	width: 100%;
 }
 .library__header
