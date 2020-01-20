@@ -6,4 +6,4 @@ Web Layout
 
 ## My Layout
 DONE. It's better to set zoom 70% to see the similarity
-![Layout](http://i.imgur.com/mBVfoTF.png)
+![Layout](http://i.imgur.com/cm02e17.png)

@@ -73,7 +73,6 @@ header
 }
 .header__nav a
 {
-	color: #00c4c0;
 	text-decoration: none;
 }
 .header__container
@@ -94,8 +93,7 @@ header
 }
 .header__nav li
 {
-	border-left: 2px solid whitesmoke;
-	color: #00c4c0;
+	border-left: 2px solid whitesmoke;	
 	display: inline;
 	font-size: 4rem;
 	font-weight: 700;
@@ -104,6 +102,7 @@ header
 }
 .passwords__info
 {
+	color: #00c4c0;
 	font-family: 'Montserrat';
 	font-weight: 700;
 	margin-left: 10px;
